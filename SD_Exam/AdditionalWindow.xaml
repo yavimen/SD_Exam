@@ -1,0 +1,51 @@
+﻿<Window x:Class="SD_Exam.AdditionalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SD_Exam"
+        mc:Ignorable="d"
+        Title="AdditionalWindow" Height="450" Width="800" FontSize="22">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="310.757"/>
+            <ColumnDefinition Width="246*"/>
+            <ColumnDefinition Width="96*"/>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="308*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="35*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="TitleText" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="4" HorizontalAlignment="Stretch"
+                  VerticalAlignment="Center"  Height="40" Background="#FFE2E2E2"/>
+        <TextBox x:Name="DoseText" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="4" HorizontalAlignment="Stretch"
+                  VerticalAlignment="Center"  Height="40" Background="#FFE2E2E2"/>
+        <TextBox x:Name="DescrText" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="4" HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"  Height="40" Background="#FFE2E2E2"/>
+        <TextBox x:Name="AmountText" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="4" HorizontalAlignment="Stretch"
+                   VerticalAlignment="Center"  Height="40" Background="#FFE2E2E2"/>
+        <Label HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"
+               Content="Title" HorizontalContentAlignment="Center"/>
+        <Label HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3"
+               Content="Dose" HorizontalContentAlignment="Center"/>
+        <Label HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4"
+               Content="Desription" HorizontalContentAlignment="Center"/>
+        <Label HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5"
+               Content="Amount" HorizontalContentAlignment="Center"/>
+        <Button Name="AddMedicine" Grid.Column="4" Grid.ColumnSpan="2" Content="Add Medicine" HorizontalAlignment="Center" Foreground="White" 
+                Grid.Row="7" VerticalAlignment="Bottom" FontSize="20" Height="50" Width="200" Background="Blue" Click="AddMedicine_Click">
+        </Button>
+    </Grid>
+</Window>
